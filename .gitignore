@@ -1,0 +1,5 @@
+*.pyc
+.*.swp
+build
+dist
+dzenlog_text.egg-info
