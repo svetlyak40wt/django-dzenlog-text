@@ -10,7 +10,7 @@ setup(
     author = 'Alexander Artemenko',
     author_email = 'svetlyak.40wt@gmail.com',
     url = 'http://github.com/svetlyak40wt/django-dzenlog-text/',
-    install_requires = ['django-dzenlog'],
+    install_requires = ['django-dzenlog>=0.2.0'],
     dependency_links = ['http://aartemenko.com/media/packages.html'],
     classifiers=[
         'Development Status :: 3 - Alpha',
