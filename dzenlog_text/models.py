@@ -3,7 +3,8 @@ from django.utils.translation import ugettext_lazy as _
 from django_dzenlog.models import GeneralPost
 
 class TextPost(GeneralPost):
-    body_detail_template = 'dzenlog_text/post.html'
+    body_detail_template      = 'dzenlog_text/body_detail.html'
+    body_list_template        = 'dzenlog_text/body_list.html'
     feed_description_template = 'dzenlog_text/text_feed_detail.html'
 
     annotation = models.CharField(
