@@ -7,7 +7,7 @@ This is a simple application for textual blog, based on the
 Installation
 ============
 
-* Install [django-dzenlog][].
+* Install [django-dzenlog][] and [django-autolinks][].
 * Place `dzenlog_text` somewhere in your python path.
 * Add `dzenlog_text` to yours `INSTALLED_APPS`.
 * Run `./manager.py syncdb`
@@ -18,3 +18,4 @@ Installation
 * Enjoy text posts in your blog.
 
 [django-dzenlog]: http://github.com/svetlyak40wt/django-dzenlog
+[django-autolinks]: http://github.com/svetlyak40wt/django-autolinks

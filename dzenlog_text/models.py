@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 from django_dzenlog.models import GeneralPost
+from django_autolinks.utils import process_links
 
 class TextPost(GeneralPost):
     list_template             = 'dzenlog_text/list.html'
@@ -20,4 +21,8 @@ class TextPost(GeneralPost):
                     help_text = _('Comma separated keywords list for search optimisation.'),
                     blank = True,
                     max_length = 255)
+
+    def save(self):
+        self.body = process_links(self.body)
+        super(TextPost, self).save()
 
