@@ -26,3 +26,6 @@ class TextPost(GeneralPost):
         self.body = process_links(self.body)
         super(TextPost, self).save()
 
+    class Meta:
+        verbose_name = _('textual post')
+        verbose_name_plural = _('textual posts')
