@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name = 'dzenlog-text',
-    version = '0.2.3',
+    version = '0.2.4',
     description = '''This is a simple application for textual blog, based on the '''
                   '''django-dzenlog application.''',
     keywords = 'django apps blogging dzenlog',
@@ -25,5 +25,6 @@ setup(
         'templates': ['*.html'],
     },
     include_package_data = True,
+    zip_safe = False,
 )
 
